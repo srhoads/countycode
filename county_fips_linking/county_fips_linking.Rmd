@@ -33,5 +33,5 @@ census_county$fips <- gsub(" ", "", census_county$fips) # get rid of the space t
 
 ```{r}
 summary(county_fips_linking <- merge(county.fips, census_county, by = "fips", all = T)) # merge/join mapproj df with census_county linking file by fips
-# save(county_fips_linking, file = "county_fips_linking.rda") # commented out, but running like will download r data file
+# save(county_fips_linking, file = "county_fips_linking.rda") # commented out, but running this will download r data file
 ```
